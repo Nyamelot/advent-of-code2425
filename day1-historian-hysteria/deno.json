@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.8",
+    "node": "npm:node@^20.18.1"
+  },
+  "nodeModulesDir": "auto"
+}
