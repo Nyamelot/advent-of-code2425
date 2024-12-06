@@ -14,7 +14,13 @@ class HystorianId {
   position_sums = 0;
 
   private readId(file_name: string) {
-    
+    let file_string;
+    fs.readFile('inputs/' + file_name,'utf8',(err, file_data) => {
+      if (err) {
+        return console.error(err);
+      }
+      file_string = file_data.toString();
+    });
   }
 
   constructor() {
